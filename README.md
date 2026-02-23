@@ -39,3 +39,49 @@ Ce projet a été réalisé dans le cadre d’un apprentissage personnel afin de
 ---
 
 ## 4. Structure du projet
+\section{Structure du projet}
+
+Le projet est organisé selon l’architecture suivante :
+
+\begin{verbatim}
+excel-invoice-automation/
+│
+├── data/                     # Fichiers Excel d’entrée
+├── factureclients/           # Dossier généré automatiquement (factures clients)
+│
+├── main.py                   # Script principal (orchestration)
+├── traitement_excel.py       # Fonctions de traitement Excel
+├── requirements.txt          # Dépendances du projet
+└── README.md                 # Documentation
+\end{verbatim}
+
+\subsection*{Description des composants}
+
+\begin{itemize}
+    \item \textbf{main.py} : 
+    Script principal du programme. Il gère :
+    \begin{itemize}
+        \item Le choix du dossier contenant les fichiers Excel
+        \item La vérification des fichiers
+        \item L’appel des fonctions de traitement
+        \item La génération des factures
+    \end{itemize}
+
+    \item \textbf{traitement\_excel.py} : 
+    Contient les fonctions de traitement des données :
+    \begin{itemize}
+        \item Vérification de la conformité des fichiers
+        \item Extraction des clients
+        \item Regroupement des commandes
+        \item Structuration des données
+    \end{itemize}
+
+    \item \textbf{data/} : 
+    Dossier contenant les fichiers Excel sources à traiter.
+
+    \item \textbf{factureclients/} : 
+    Dossier créé automatiquement pour stocker les factures générées.
+
+    \item \textbf{requirements.txt} : 
+    Liste des bibliothèques Python nécessaires à l’exécution du projet.
+\end{itemize}
