@@ -41,7 +41,7 @@ Ce projet a été réalisé dans le cadre d’un apprentissage personnel afin de
 ## 4. Structure du projet
 
 Le projet est organisé selon l’architecture suivante :
-'''
+```
 excel-invoice-automation/
 │
 ├── data/                  # Fichiers Excel d’entrée
@@ -51,4 +51,4 @@ excel-invoice-automation/
 ├── traitement_excel.py    # Fonctions de traitement des données
 ├── requirements.txt       # Dépendances du projet
 └── README.md              # Documentation
-'''
+```
